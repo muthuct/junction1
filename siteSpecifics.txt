@@ -1,0 +1,25 @@
+Colors:
+Color 1 (Background) : #FEFEFE
+Color 2 (Text)       : #000064
+Color 3 (Hover)      : #8FAE22
+
+Fonts:
+Font 1 (All text by deafult)           : Dosis
+Font 2 (Heading & Navbar in Capitals)  : Oswald
+
+Libraries:
+1.Bootstrap
+2.Jquery
+3.GoogleFont
+4.FontAwesome
+5.Animateonscroll.cs/ Animate.css/ Hover.css
+
+Scss partials:
+1. Navbar
+2. Footer
+3. for eachpage
+
+all imported to styles.scss which should be compiled
+
+Shortcuts:
+Ctrl+space to get suggestions

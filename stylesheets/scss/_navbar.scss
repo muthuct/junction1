@@ -1,0 +1,43 @@
+/******************* Navigation Bar Styles ************************/
+
+#header-nav {
+    background-color: $color-2;
+    border-radius: 0; //To remove default border radius applied by bootstrap.
+    border: 0; //To remove default border applied by bootstrap.
+}
+
+#logo-img {
+    //background: url('../../images/brandLogo.jpg') no-repeat; //Brand Logo set as background image
+    width: 180px; //Setting height and width of logo
+    height: 65px;
+    margin: 5px 10px 5px 10px; //Setting margin around logo to give neat look
+}
+
+#toggle-menu-button {
+    margin-top: 23px; //To align toggle button vertically as per requirement
+    border: 0px; //To remove default border applied to toggle button
+}
+
+#toggle-menu-button:hover, #toggle-menu-button:focus, #toggle-menu-button:visited {
+    background-color: $color-2; //To match hover,focus and visited toggle button color with navbar color
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $color-1; //To change the color of hamburger toggle icon-bars
+}
+
+#nav-list {
+    margin-top:10px; //Setting margin for li menu items to align vertically as per requirement
+    padding-right:10px; //To add padding to right most menu item to prevent it from sticking to right edge
+}
+
+#nav-list a {
+    color: $color-1;
+    text-align: center; //To align menu items in the center in mobile and other views
+    text-transform: uppercase; //Changing menu itemd to upper case
+    font-family: $font-stack-2; //Using font 2 to style it
+    font-weight: 700;
+    font-variant: small-caps;
+    font-style: italic;
+    font-size: 1.2em;
+}

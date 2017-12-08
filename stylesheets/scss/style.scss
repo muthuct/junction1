@@ -1,0 +1,25 @@
+/****Variable Declarations****/
+$color-1: #fefefe;
+$color-2: #000064;
+$color-3: #8FAE22;
+$color-4: #2892D7;
+$color-5: #0F52BA;
+$color-6: #1034A6;
+$color-7: #C6D4FF;
+$font-stack-1: 'Oswald', sans-serif;
+$font-stack-2: 'Dosis', sans-serif; 
+/*****************************/
+
+body {
+    background-color: $color-1; 
+    color: $color-2;
+    font-family: $font-stack-1;
+    font-size: 16px;
+    padding-top: 90px; //To account for navbar fixed top
+}
+
+@import 'navbar';
+@import 'change-navbar-breakpoint';
+@import 'myanimations';
+
+@include change-navbar-breakpoint-at(950px);
