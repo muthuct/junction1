@@ -1,7 +1,7 @@
 /******************* Navigation Bar Styles ************************/
 
 #header-nav {
-    background: $color-5;//linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: $color-2;//linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 0; //To remove default border radius applied by bootstrap.
     border: 0; //To remove default border applied by bootstrap.
     -webkit-box-shadow: 0 7px 4px #777;
@@ -22,11 +22,11 @@
 }
 
 #toggle-menu-button:hover, #toggle-menu-button:focus, #toggle-menu-button:visited {
-    background-color: $color-1; //To match hover,focus and visited toggle button color with navbar color
+    background-color: $color-2; //To match hover,focus and visited toggle button color with navbar color
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: $color-2; //To change the color of hamburger toggle icon-bars
+    background-color: $color-1; //To change the color of hamburger toggle icon-bars
 }
 
 #nav-list {
@@ -47,13 +47,13 @@
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover{
-    background-color: $color-5;  //To remove default active menu item color
-    border-radius: 0px; //To add custom border radius to active element 
+    background-color: $color-1;  //To remove default active menu item color
+    //border-radius: 0px; //To add custom border radius to active element 
     //Also both properties over ride hover animation for active elements.
 }
 
 #nav-list li.active a {
-    color: $color-1; //Changing color for active menu li item
+    color: $color-2; //Changing color for active menu li item
 }
 
 
