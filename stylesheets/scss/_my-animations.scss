@@ -1,4 +1,4 @@
-
+/*** Conatins animation snippets taken from various famous libraries****/
 
 
 /* Shutter Out Vertical taken from hover.css*/
@@ -9,11 +9,12 @@
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;
     position: relative;
-    background: $color-2;
+   // background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
+    
   }
   .hvr-shutter-out-vertical:before {
     content: "";
@@ -23,7 +24,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: $color-3;
+    background: $color-6;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50%;
@@ -37,8 +38,36 @@
   }
   .hvr-shutter-out-vertical:hover, .hvr-shutter-out-vertical:focus, .hvr-shutter-out-vertical:active {
     color: $color-1;
+    
   }
   .hvr-shutter-out-vertical:hover:before, .hvr-shutter-out-vertical:focus:before, .hvr-shutter-out-vertical:active:before {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
   }
+
+
+
+
+
+  /*******************************FadeInUp taken from animate.css*************/
+
+  .animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;animation-duration:2s;}
+
+  @keyframes fadeInUpBig {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 2000px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .fadeInUpBig {
+    animation-name: fadeInUpBig;
+  }
+  
+
+    /*******************************/

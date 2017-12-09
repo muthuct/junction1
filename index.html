@@ -1,91 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>New Junction1 | Signage Company Chennai, India</title>
 
-        <!--Favicon-->
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        
-        <!-- Bootstrap CSS -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<head>
+    <title> Junction1 | Signage Company Chennai, India</title>
+    <style>
+        #hideAll {
+            position: fixed;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            background-color: white;
+            z-index: 99;
+            /* Higher than anything else in the document */
+            /*This style applies for delayed page load code snippet*/
+        }
+    </style>
+</head>
 
-        <!--Other Style Sheets-->    
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Dosis|Oswald" rel="stylesheet">
-        <link href="stylesheets/css/style.css" rel="stylesheet">
+<body>
+    <!-- Code Snippet for delayed page load :
+         Code Snippet to load page after all resources have been loaded
+         We are using an element to hide all elements and once the page loads required resources we stop displaying '#hideAll' element. We do this by giving a 0.5s delay after page load and then set #hideAll's display as none and then set the animation for the welcome text by adding animate.css classes-->
+    <div style="display: none" id="hideAll">&nbsp;</div>
+    <script>
+        document.getElementById("hideAll").style.display = "block";
+        window.onload = function () {
+            setTimeout(loadPage, 500);
+        }
 
-        <!--Font Awesome Script-->
-        <script src="https://use.fontawesome.com/0c0b6d1da1.js"></script>
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        <header>
-            <nav id="header-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <div class="navbar-header">
-                        <a href="index.html" class="">
-                            <img id="logo-img" alt="Logo image" src="images/brandLogo.jpg"/>
-                        </a>
-                        <button type="button" id="toggle-menu-button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded=false>
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        </button>
-                </div>
+        function loadPage() {
+            document.getElementById("hideAll").style.display = "none";
+            $('#welcome').show().addClass('animated fadeInUpBig');
+        }
+    </script>
+    <!-- Code Snippet for delayed page load ends-->
 
-                <div id="collapsable-nav" class="collapse navbar-collapse">
-                    <ul id="nav-list" class="nav navbar-nav navbar-right">
-                        <li class="hvr-shutter-out-vertical">
-                            <a href="">
-                                <i class="fa fa-home" aria-hidden="true"></i>  
-                                Home
-                            </a>
-                        </li>
-                        <li class="hvr-shutter-out-vertical">
-                            <a href="">
-                                <i class="fa fa-users" aria-hidden="true"></i>
-                                About us
-                            </a>
-                        </li>
-                        <li class="hvr-shutter-out-vertical">
-                            <a href="">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                Products
-                            </a>
-                        </li>
-                        
-                        <li class="hvr-shutter-out-vertical">
-                            <a href="">
-                                <!--<i class="fa fa-handshake-o" aria-hidden="true"></i> Use this for clients-->
-                                <i class="fa fa-comments" aria-hidden="true"></i>
-                                Clients &amp; Testimonials
-                            </a>
-                        </li>
-                        
-                        <li class="hvr-shutter-out-vertical">
-                            <a href="">
-                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                                Contact Us
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <h1 class="text-center">Hello World</h1>
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Bootstrap JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </body>
+
+    <header>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="col-xs-12 col-sm-6">
+                <section id="welcome" style="display:none">
+                    <h2 id="welcome-heading">Welcome to Junction1!</h2>
+                    <p id="welcome-message" class="text-justify">
+                        Your one stop source for a wide range of Advertising Sign boards / Large Format digital prints and all kinds of displays and POPs. First of its kind, Junction1 is a one stop Signage Showroom for all your Signage needs,
+                        whether its branding, brand promotion, creativity, Interior requirements. Simply taking you to the next level of Advertising. Junction1 is one of the well reputed Signage companines in town, well established, using latest technology and equipment, providing international quality by well trained technicians.
+                    </p>
+                </section>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <!--Scripts required to load entire page-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/commonScripts.js"></script>
+    <script src="js/homePage.js"></script>
+</body>
+
 </html>

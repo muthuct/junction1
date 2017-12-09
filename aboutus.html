@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> About Us | Junction1 </title>
+
+    <style>
+            #hideAll {
+                position: fixed;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                background-color: white;
+                z-index: 99;
+                /* Higher than anything else in the document */
+                /*This style applies for delayed page load code snippet*/
+            }
+    </style>
+</head>
+
+<body>
+
+    <!-- Code Snippet for delayed page load :
+         Code Snippet to load page after all resources have been loaded
+         We are using an element to hide all elements and once the page loads required resources we stop displaying '#hideAll' element. We do this by giving a 0.5s delay after page load and then set #hideAll's display as none and then set the animation for the welcome text by adding animate.css classes-->
+         <div style="display: none" id="hideAll">&nbsp;</div>
+         <script>
+             document.getElementById("hideAll").style.display = "block";
+             window.onload = function () {
+                 setTimeout(loadPage, 500);
+             }
+     
+             function loadPage() {
+                 document.getElementById("hideAll").style.display = "none";
+                 $('#welcome').show().addClass('animated fadeInUpBig');
+             }
+         </script>
+         <!-- Code Snippet for delayed page load ends-->
+
+
+    <header>
+
+    </header>
+    <main>
+        <div id="about-us" class="container">
+            <div class="row">
+            <div class="col-xs-12 col-md-offset-1 col-md-10">
+            <div class="head-box text-center">
+                <span><i class="fa fa-users" aria-hidden="true"></i> About Us</span>
+            </div>
+            <br>
+            <p class="text-justify">
+            We are your one stop source for a wide range of Advertising Signboards, Large format Digital prints or Displays. We are a first of its kind signage showroom for all your signage needs, whether its branding, brand promotion, creativity or interior requirements. We simply take you to the next level of advertising!
+            </p> 
+            </div>    
+            </div>
+            
+            <br/>
+
+            <div id="our-strengths">
+                    <div class="head-box text-center">
+                    <span><i class="fa fa-thumbs-up" aria-hidden="true"></i> Our Strengths 
+                    </span>
+                    </div>
+                    <div class="row">
+                    <div class="col-xs-12 col-sm-offset-3 col-sm-3 text-center">
+                    <i class="fa fa-star strengths" aria-hidden="true"></i><p>Superior Quality</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 text-center">
+                    <i class="fa fa-clock-o strengths" aria-hidden="true"></i><p>Timely Delivery</p>
+                    </div>
+                    </div>
+            </div>
+            
+            <div> 
+            <h2 class="text-center">Signage & Junction 1</h2> 
+            <p class="text-justify">In the competitive field of marketing communications, effective use of signage for your company is very important. Junction 1 provides sign systems and solutions to help companies establish, develop and maintain high-level brand awareness - as well as for re-branding, as required.</p>
+            
+            
+            <p class="text-justify">At Junction 1, we offer a full range of sign systems designed to cater for your exact requirements. From fascias - perhaps incorporating illuminated, projected lettering, using acrylic, aluminum or molded letters and full-colour images - spinning signs, plaques and panel and post systems. We provide our customers with a range of signage solutions to meet every need.</p> 
+            
+            	
+            <p class="text-justify">We can help you build a consistent brand image across all of your signage; whether you have interior or exterior signs, window graphics, exhibition stands or promotional displays. How about illuminating your signage for increased brand presence at night? We also create signage for specific campaigns; for example a taxi wrap or promotional vehicles for your companies new product launch or a suspended banner advertising a sales offer.</p>
+            
+            <p class="text-justify">The manner in which your business presents itself to the public and identifies your location and product is crucial to your success.  Junction 1 can help you create professional looking, high impact signs, signage and graphics for your business!</p>
+            
+            <p class="text-justify">Junction 1 is well established with an impressive client list, using latest technology and equipment competing with international quality by well trained technicians.</p>
+
+            </div>
+
+            <div>
+            Showroom :
+            
+            The showroom is managed by masters of Visual Display / Signage field, with broad – based experience.
+            </div>
+            
+            <div>
+            Designing :
+            
+            Designing of every kind of Signage / Hoardings, Banners, Displays, Exhibition stalls, Brochures etc.
+            
+            At New Junction 1 we have employed a team of talented Designers who understand client’s ultimate aims and the nature of the final output.
+            </div>     
+            <div>
+            Our Team :
+            
+            New Junction 1 team - is a very elite and talented group of people, most of whom have been in this industry for 10 years plus. Our people care about what they do as artists and craftspeople, taking pride in their creations for our clients. We especially love challenging projects and finding solutions for our customers.
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!--Scripts required to load entire page-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/commonScripts.js"></script>
+    <script src="js/aboutUs.js"></script>
+</body>
+
+</html>

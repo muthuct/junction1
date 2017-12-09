@@ -12,7 +12,7 @@ Libraries:
 2.Jquery
 3.GoogleFont
 4.FontAwesome
-5.Animateonscroll.cs/ Animate.css/ Hover.css
+5.Copy of required sinppets from Animate.css/ Hover.css
 
 Scss partials:
 1. Navbar
