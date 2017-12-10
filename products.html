@@ -3,15 +3,89 @@
 
 <head>
     <title> Our Products | Junction1 </title>
+    
+    <style>
+            #hideAll {
+                position: fixed;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                background-color: white;
+                z-index: 99;
+                /* Higher than anything else in the document */
+                /*This style applies for delayed page load code snippet*/
+            }
+    </style>
 </head>
 
 <body>
+
+    <!-- Code Snippet for delayed page load :
+         Code Snippet to load page after all resources have been loaded
+         We are using an element to hide all elements and once the page loads required resources we stop displaying '#hideAll' element. We do this by giving a 0.5s delay after page load and then set #hideAll's display as none and then set the animation for the welcome text by adding animate.css classes-->
+         <div style="display: none" id="hideAll">&nbsp;</div>
+         <script>
+             document.getElementById("hideAll").style.display = "block";
+             window.onload = function () {
+                 setTimeout(loadPage, 500);
+             }
+     
+             function loadPage() {
+                 document.getElementById("hideAll").style.display = "none";
+                 $('#welcome').show().addClass('animated fadeInUpBig');
+             }
+         </script>
+         <!-- Code Snippet for delayed page load ends-->
+
+
     <header>
 
     </header>
-    <section>
-
-    </section>
+    <main>
+        <div id="products-page" class="container">
+            <h2 class="text-center"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Products <hr></h2>
+              
+            <div id="product-page-tiles" class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                      <a href="#"><div class="product-tile"><span>Digital Printings</span></div></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                      <a href="#"><div class="product-tile"><span>Hoardings</span></div></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                            <a href="#"><div class="product-tile"><span>Neon Boards</span></div></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                            <a href="#"><div class="product-tile"><span>Name Boards</span></div></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                            <a href="#"><div class="product-tile"><span>Alco ACP Boards</span></div></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                            <a href="#"><div class="product-tile"><span>Exhibitions</span></div></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                            <a href="#"><div class="product-tile"><span>Display Racks</span></div></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                            <a href="#"><div class="product-tile"><span>Pop's</span></div></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <a href="#"><div class="product-tile"><span>Creative Works</span></div></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                  <a href="#"><div class="product-tile"><span>LED</span></div></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                            <a href="#"><div class="product-tile"><span>Vehicle Graphics</span></div></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                            <a href="#"><div class="product-tile"><span>Chennai City Centre</span></div></a>
+                    </div>
+            </div>
+        </div>
+    </main>
     <footer>
 
     </footer>
