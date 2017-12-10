@@ -32,6 +32,7 @@
         function loadPage() {
             document.getElementById("hideAll").style.display = "none";
             $('#welcome').show().addClass('animated fadeInUpBig');
+            $('#welcome-img').show().addClass('animated fadeInDownBig');
         }
     </script>
     <!-- Code Snippet for delayed page load ends-->
@@ -53,7 +54,9 @@
                 </section>
             </div>
             <div class="col-xs-12 col-sm-6">
-
+                <div id="welcome-img" style="display:none">
+                <img id="threed-logo" src="images/threeDimensionalLogo.png">
+                </div> 
             </div>
         </div>
     </main>

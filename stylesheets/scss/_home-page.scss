@@ -12,5 +12,47 @@
 #welcome {
     -vendor-animation-duration: 1s;
 }
-  
+
+#welcome-img {
+    -vendor-animation-duration: 1s;
+}
+
+#threed-logo {
+    height: 244px;
+    width: 500px;
+    margin-top: 160px;
+    margin-left: 80px;
+}
 /***********************/
+@media only screen and (max-width: 748px) {
+    
+    #welcome-heading {
+        font-family: $font-stack-2;
+        font-weight: bold;
+        font-size:3em;
+    }
+    
+    #welcome-message {
+        font-size:1em;
+    }
+    
+        #threed-logo {
+            height: 147px;
+            width: 300px;
+            margin-top: 40px;
+            margin-left: 10px;
+        }
+    
+}
+/*
+@media only screen and (max-width: 530px) {
+    
+        #threed-logo {
+            height: 147px;
+            width: 300px;
+            margin-top: 40px;
+            margin-left: 10px;
+        }
+    
+}
+*/
