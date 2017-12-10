@@ -3,15 +3,130 @@
 
 <head>
     <title> Contact Us | Junction1 </title>
+
+    <style>
+            #hideAll {
+                position: fixed;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                background-color: white;
+                z-index: 99;
+                /* Higher than anything else in the document */
+                /*This style applies for delayed page load code snippet*/
+            }
+    </style>
 </head>
 
 <body>
+
+     <!-- Code Snippet for delayed page load :
+         Code Snippet to load page after all resources have been loaded
+         We are using an element to hide all elements and once the page loads required resources we stop displaying '#hideAll' element. We do this by giving a 0.5s delay after page load and then set #hideAll's display as none and then set the animation for the welcome text by adding animate.css classes-->
+         <div style="display: none" id="hideAll">&nbsp;</div>
+         <script>
+             document.getElementById("hideAll").style.display = "block";
+             window.onload = function () {
+                 setTimeout(loadPage, 500);
+             }
+     
+             function loadPage() {
+                 document.getElementById("hideAll").style.display = "none";
+                 $('#welcome').show().addClass('animated fadeInUpBig');
+             }
+         </script>
+         <!-- Code Snippet for delayed page load ends-->
+
     <header>
 
     </header>
-    <section>
+    <main>
 
-    </section>
+            <div id="contact-us" class="container">
+                    <div class="row text-center">
+                            <h2><i class="fa fa-paper-plane" aria-hidden="true"></i> Contact Us</h2> 
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-offset-1 col-md-5 text-center">
+                            
+                                <h3><i class="fa fa-map-marker"></i> Address</h3>
+                                <p>
+                                         No:30, R.K. Mutt Road,
+                                    <br> Mylapore, Chennai-600 004.
+                                    <br> Tamil Nadu, India.
+                                </p>
+                                <h3><i class="fa fa-bullhorn"></i> Reach Out to Us</h3>
+                                <p>
+                                    Mr. PLV. Palaniappan Ganesh<br>
+                                    Managing Director<br>
+                                    +91 98406 12346<br>
+                                    ganesh@junction1.net<br>
+                                </p>
+                                <p>
+                                Mr.D.Velumani<br>
+                                velu@junction1.net<br>
+                                </p>
+                                <h3><i class="fa fa-envelope"></i> Email  us at : </h3>
+                                <p>junctionmktg@junction1.net</p>
+                                <h3><i class="fa fa-phone"></i> Call  us at : </h3>
+                                <p><span class="glyphicon glyphicon-phone-alt"></span> 044 24934710</p>
+                                <p><i class="fa fa-mobile" aria-hidden="true"></i> +91 99406 81715
+                                </p>
+                        </div>
+                    
+                        <div class="col-xs-12 col-md-6 text-center">
+                            <form id="form-box" class="form-horizontal" action="" method="">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="name">Name* : </label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="email">Email* : </label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="phone">Ph No. : </label>
+                                    <div class="col-sm-8">
+                                        <input type="tel" class="form-control" id="phone" placeholder="Enter Phone Number" name="phone">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="enquiry">Query* : </label>
+                                    <div class="col-sm-8">
+                                        <textarea class="form-control " rows="12" id="enquiry" name="message" required></textarea>
+                                    </div>
+                                    
+                                        <span class="help-block">* - Required Fields.</span>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        
+                                            <button id="send-button" type="submit" class="hvr-shutter-out-vertical"> <i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
+                                        
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                        <div class"col-xs-12">
+                        <br>
+                        <hr>
+                        <br>
+                        <center> 
+                        <img src="images/locationMap.JPG" class="text-center">
+                        </center>
+                        </div>
+                    
+                </div>
+
+    </main>
     <footer>
 
     </footer>

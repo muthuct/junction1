@@ -3,17 +3,77 @@
 
 <head>
     <title> Our Clients | Junction1 </title>
+
+    <style>
+            #hideAll {
+                position: fixed;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                background-color: white;
+                z-index: 99;
+                /* Higher than anything else in the document */
+                /*This style applies for delayed page load code snippet*/
+            }
+    </style>
 </head>
 
 <body>
+    <!-- Code Snippet for delayed page load :
+         Code Snippet to load page after all resources have been loaded
+         We are using an element to hide all elements and once the page loads required resources we stop displaying '#hideAll' element. We do this by giving a 0.5s delay after page load and then set #hideAll's display as none and then set the animation for the welcome text by adding animate.css classes-->
+         <div style="display: none" id="hideAll">&nbsp;</div>
+         <script>
+             document.getElementById("hideAll").style.display = "block";
+             window.onload = function () {
+                 setTimeout(loadPage, 500);
+             }
+     
+             function loadPage() {
+                 document.getElementById("hideAll").style.display = "none";
+                 $('#welcome').show().addClass('animated fadeInUpBig');
+             }
+         </script>
+         <!-- Code Snippet for delayed page load ends-->
+
+
     <header>
 
     </header>
-    <section>
+    <main>
+            
+            <div id="clients" class="container">
+            
+            <h2 class="text-center"> <i class="fa fa-comments" aria-hidden="true"></i> Testimonials</h2>  
+            <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 " id="feedback-box">
+            <div><i class="fa fa-quote-left fa-border" aria-hidden="true"></i></div>
+            <div id="feedback-box-text">
+            <div id="quotes" class="text-center">  We are happy about the service given by New Junction 1. Especially, I have to mention the wonderful service Mr.Venkat is rendering.  All the best for an extraordinary future.
+            </div>
+            <br>
+            <div id="feedback-client" class="text-center">
+                    Frozen Thoughts<br>
+                    <span>R.Sridar</span><br>
+                    <span>Administration</span>
+            </div>
+            </div>
+            <div class="text-right"><i class="fa fa-quote-right fa-border" aria-hidden="true"></i></div>
+             </div>
+             </div>
 
-    </section>
+             <h2 id="clients-heading" class="text-center"> <i class="fa fa-handshake-o" aria-hidden="true"></i> Our Clients</h2> 
+             <hr>
+
+             <div id="client-pictures" class="row">
+
+             </div>
+
+            </div>
+    </main>
     <footer>
-
+            
     </footer>
 
     <!--Scripts required to load entire page-->

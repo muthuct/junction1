@@ -5,6 +5,10 @@ $.get("../templates/headlinks.html", function(data){
 $.get("../templates/navbar.html", function(data){
     $("header").append(data);
 });
+
+$.get("../templates/footer.html", function(data){
+    $("footer").append(data);
+});
 /*
 function setActive(currentActiveItem) {
     console.log(currentActiveItem);

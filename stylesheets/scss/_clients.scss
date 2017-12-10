@@ -1,0 +1,45 @@
+#clients {
+    margin-top: 10px;
+}
+
+#clients h2 {
+    font-size: 1.7em;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+}
+
+#feedback-box {
+        font-size: 23px;
+        margin-top:10px;
+        margin-bottom:10px;
+        padding: 10px;
+        -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+        box-shadow:0 0 10px rgba(0, 0, 0, 0.5);    
+}
+
+#feedback-box #quotes {
+    font-style: italic;
+    font-family:  $font-stack-3;
+}
+
+#feedback-client {
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#feedback-client span{
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#clients-heading {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#client-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
